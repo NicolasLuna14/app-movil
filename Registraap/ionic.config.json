@@ -1,0 +1,7 @@
+{
+  "name": "Registraap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
