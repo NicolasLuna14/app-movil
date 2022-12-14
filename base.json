@@ -1,0 +1,30 @@
+{
+    "alumnos":
+    [
+        {"id":1, "nombre":"manuel", "usuario":"m.@duocuc.cl", "contrasena":"1234", "idprofsor":1, "seccion":"001D" },
+        {"id":2, "nombre":"alejandro", "usuario":"a.@duocuc.cl", "contrasena":"1234", "idprofesor":2, "seccion":"002D"},
+        {"id":3, "nombre":"fabian", "usuario":"f.@duocuc.cl", "contrasena":"1234", "idprofesor":3, "seccion":"003D"},
+        {"id":4, "nombre":"jose", "usuario":"j.@duocuc.cl", "contrasena":"1234", "idprofesor":4,"seccion":"004D"},
+        {"id":5, "nombre":"zinedine", "usuario":"z.@duocuc.cl", "contrasena":"1234", "idprofesor":5, "seccion":"005D" }
+    ],
+
+    "profesores":
+    [
+        {"id":1, "nombre":"patricio", "usuario":"p.@pro.duocuc.cl", "contrasena":"1234", "seccion":"001D", "nombres":"Programación movil"},
+        {"id":2, "nombre":"luis", "usuario":"l.@pro.duocuc.cl", "contrasena":"1234", "seccion":"002D", "nombres":"Arquitectura"},
+        {"id":3, "nombre":"macdalena", "usuario":"m.@pro.duocuc.cl", "contrasena":"1234", "seccion":"003D", "nombres":"Calidad"},
+        {"id":4, "nombre":"flabio", "usuario":"f.@pro.duocuc.cl", "contrasena":"1234", "seccion":"004D", "nombres":"Fé cristiana"},
+        {"id":5, "nombre":"natalia", "usuario":"n.@pro.duocuc.cl", "contrasena":"1234", "seccion":"005D", "nombres":"Estadistica"}
+    ],
+
+    "asignaturas":
+    [
+        {"seccion":"001D", "iPprofesor":1, "nombre":"Programación movil"},
+        {"seccion":"002D", "id":2, "nombre":"Arquitectura"},
+        {"seccion":"003D", "id":3, "nombre":"Calidad"},
+        {"seccion":"004D", "id":4, "nombre":"Fé cristiana"},
+        {"seccion":"005D", "id":5, "nombre":"Estadistica"}
+    ]
+
+     
+}
