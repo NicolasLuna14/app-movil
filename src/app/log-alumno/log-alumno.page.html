@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <br>
+    <ion-item>
+      <ion-avatar class="align-text-center">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" style=>
+      </ion-avatar>
+      <ion-label></ion-label>
+    </ion-item>
+
+    <br>
+       
+    <ion-item> 
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input #usuario type="text" placeholder= "z.@duocuc.cl" #txtUsuario></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input #password type="password" placeholder="*******" #txtPassword></ion-input>
+    </ion-item>
+
+
+
+  <br>
+  <ion-button [routerLink]="['/restablecer']"  color="warning" shape="round">Recuperar Clave</ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button [routerLink]="['/home']"  color="danger" shape="round">
+      <ion-icon name="arrow-back-outline" ></ion-icon>
+    </ion-button>
+    
+    <ion-button (click)="agregar(txtUsuario, txtPassword)" slot="" color="secondary" shape="round">
+      <ion-icon slot="inon-center" name="add-circle"> </ion-icon>
+    </ion-button>
+
+    <ion-button  (click)="siguiente(txtUsuario, txtPassword)" slot="end" color="success" shape="round">
+      <ion-icon name="arrow-forward" ></ion-icon> 
+       
+    </ion-button>
+  </ion-toolbar>
+    
+     
+</ion-footer>

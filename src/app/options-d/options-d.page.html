@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Genere su codigo QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="listado.length > 0 ">
+
+    <ion-list>
+      <div *ngFor="let aux of listado" [routerLink]="['../qr/', aux.id]">
+        <ion-item>
+          <ion-label>{{aux.nombre}} </ion-label>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+  
+
+  <br>
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar> 
+    <ion-button [routerLink]="['/home']" color="danger" shape="round">
+      <ion-icon slot="icon-only" name="home"></ion-icon> 
+    </ion-button>
+
+ 
+  </ion-toolbar> 
+</ion-footer>

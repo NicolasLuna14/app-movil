@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <br>
+  
+
+  <ion-item>
+    <ion-avatar class="align-text-center">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" style=>
+    </ion-avatar>
+    <ion-label></ion-label>
+  </ion-item>
+     
+
+
+  <br>
+  <ion-item>
+    <ion-label position="floating">Usuario </ion-label>
+    <ion-input #usuario placeholder="p.@pro.duocuc.cl"></ion-input>
+  </ion-item>   
+  
+  <ion-item>
+  <ion-label position="floating">Contraseña</ion-label>
+    <ion-input #contrasena placeholder="*********" type="password"></ion-input>
+  </ion-item>  
+  <div *ngIf="mensaje;">       
+    <h3 id="Error">Mensaje: {{mensaje}}</h3>
+  </div> 
+  
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar> 
+    <ion-button [routerLink]="['/home']" color="danger" shape="round">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon> 
+    </ion-button>  
+    
+    
+
+    <ion-button id="Aceptar" (click)="Aceptar(usuario, contrasena)" slot="end" color="success" shape="round">
+      Ingresar
+    </ion-button>
+  </ion-toolbar> 
+</ion-footer>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Restablecer Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formularioRestablecer" (keyup.enter)="guardar()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input formControlName="nombre" placeholder="Correo@duocuc.cl"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nueva contraseña</ion-label>
+      <ion-input formControlName="password" placeholder="*********" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input formControlName="confirmacionPassword" placeholder="*********" type="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button (click)="guardar()" color="danger">Recuperar</ion-button>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button [routerLink]="['/log-alumno']"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+  </ion-toolbar> 
+</ion-footer>

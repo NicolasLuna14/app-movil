@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Scanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)="takePicture()">Escanear</ion-button>
+  <img [src]="picture" />
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar> 
+    <ion-button [routerLink]="['/usuarios']" color="danger" shape="round">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon> 
+    </ion-button>
+  </ion-toolbar>       
+</ion-footer>
